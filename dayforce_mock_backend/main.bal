@@ -6,7 +6,7 @@ import ballerina/io;
 configurable string serviceUrl = ?;
 
 service /Api on new http:Listener(8080) {
-    private int statusAttempt = 1;
+    private 1|2 statusAttempt = 1;
 
     final readonly & dayforce:Employee[] employees;
 
@@ -25,10 +25,7 @@ service /Api on new http:Listener(8080) {
 
     resource isolated function get [string clientNamespace]/v1/EmployeeExportJobs/Status/[int:Signed32 backgroundJobQueueItemId]() returns dayforce:Payload_Object|error {
         lock {
-            int attempt = self.statusAttempt;
-            self.statusAttempt += 1;
-
-            if attempt % 2 == 0 {
+            if self.statusAttempt == 2 {
                 return {
                     "Data": {
                         "Status": "Succeeded",
@@ -36,6 +33,7 @@ service /Api on new http:Listener(8080) {
                     }
                 };
             }
+            self.statusAttempt = 2;
             return {
                 "Data": {
                     "Status": "In progress"
@@ -48,7 +46,7 @@ service /Api on new http:Listener(8080) {
         return {
             Data: self.employees.slice(0, self.employees.length() - 1),
             Paging: {
-                Next: string `${serviceUrl}/Api/remainder`
+                Next: string `${serviceUrl}/remainder`
             }
         };
     }
