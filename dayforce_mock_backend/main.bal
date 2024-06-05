@@ -6,7 +6,7 @@ import ballerina/io;
 configurable string serviceUrl = ?;
 
 service /Api on new http:Listener(8080) {
-    private 1|2 statusAttempt = 1;
+    private int statusAttempt = 1;
 
     final readonly & dayforce:Employee[] employees;
 
