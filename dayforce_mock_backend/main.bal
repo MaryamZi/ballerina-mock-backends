@@ -5,16 +5,24 @@ import ballerina/io;
 
 configurable string serviceUrl = ?;
 
+// NOTE: this is a mock backend assumed to be called sequentially by one client program at a time.
 service /Api on new http:Listener(8080) {
     private int statusAttempt = 1;
+    private int currentIndex = 0;
+    private int? pageSize = ();
 
     final readonly & dayforce:Employee[] employees;
+    final int employeeCount;
 
     function init() returns error? {
         self.employees = check loadEmployees();
+        self.employeeCount = self.employees.length();
     }
 
     resource isolated function post [string clientNamespace]/V1/EmployeeExportJobs(true isValidateOnly, dayforce:EmployeeExportParams payload) returns json|error {
+        lock {
+            self.pageSize = payload?.PageSize;
+        }
         return {
             "Data": {
                 "Message": "Employee Export Background Job queued successfully",
@@ -43,27 +51,76 @@ service /Api on new http:Listener(8080) {
     }
 
     resource isolated function get [string clientNamespace]/v1/GetEmployeeBulkAPI/Data/[string jobId](dayforce:Paging? pagination = ()) returns dayforce:PaginatedPayload_IEnumerable_Employee {
-        return {
-            Data: self.employees.slice(0, self.employees.length() - 1),
-            Paging: {
-                Next: string `${serviceUrl}/remainder`
+        // We assume `startIndex` is always 0 here, since subsequent pagination should go to `remainder`.
+        final int endIndex;
+        lock {
+            int? pageSize = self.pageSize;
+            endIndex = pageSize == () ? 
+                            self.employeeCount :
+                            pageSize > self.employeeCount ? self.employeeCount : pageSize;
+        }
+
+        lock {
+            self.currentIndex = endIndex;
+        }
+
+        lock {
+            if endIndex == self.employeeCount {
+                return {
+                    Data: self.employees,
+                    Paging: {
+                        Next: ()
+                    }
+                };
             }
-        };
+
+            return {
+                Data: self.employees.slice(0, endIndex),
+                Paging: {
+                    Next: string `${serviceUrl}/remainder`
+                }
+            };
+        }
     }
 
     resource function get remainder() returns dayforce:PaginatedPayload_IEnumerable_Employee {
-        return {
-            Data: [self.employees[self.employees.length() - 1]],
-            Paging: {
-                Next: ""
+        final int startIndex;
+        final int endIndex;
+        lock {
+            startIndex = self.currentIndex;
+            if startIndex >= self.employeeCount {
+                return {
+                    Data: (),
+                    Paging: {
+                        Next: ()
+                    }
+                };
             }
-        };
+
+            int? pageSize = self.pageSize;
+            if pageSize == () {
+                endIndex = self.employeeCount;
+            } else {
+                int endIndexWithPageSize = startIndex + pageSize;
+                endIndex = endIndexWithPageSize > self.employeeCount ? self.employeeCount : endIndexWithPageSize;
+            }
+        }
+
+        lock {
+            self.currentIndex = endIndex;
+            return {
+                Data: self.employees.slice(startIndex, endIndex),
+                Paging: {
+                    Next: self.currentIndex >= self.employeeCount ? () : string `${serviceUrl}/remainder`
+                }
+            };
+        }
     }
 }
 
 function loadEmployees() returns readonly & dayforce:Employee[]|error {
     // Workaround for Choreo limitation.
-    json[] data = from string filePath in ["/data1.json", "/data2.json", "/data3.json"]
-                    select check io:fileReadJson(filePath);
+    string[] filePaths = from int i in 1 ... 12 select string `/data${i}.json`;
+    json[] data = from string filePath in filePaths select check io:fileReadJson(filePath);
     return data.fromJsonWithType();
 }
