@@ -2565,7 +2565,7 @@ final dayforce:Employee[] & readonly employees = [
         "CommonName": "Tanya",
         "DisplayName": "Tanya Granger",
         "FirstName": "Tanya",
-        "LastName": "Timothy",
+        "LastName": "Granger",
         "Initials": ""
     },
     {
