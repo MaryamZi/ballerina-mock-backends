@@ -295,7 +295,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2013-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "7890",
+                    "ManagerXRefCode": "78905",
                     "ManagerFirstName": "Jason",
                     "ManagerMiddleName": "Edward",
                     "ManagerLastName": "Jeffrey",
@@ -402,11 +402,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "cworker",
-        "EmployeeNumber": "3089656",
+        "EmployeeNumber": "30896",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "3089656",
+                    "EmployeeNumber": "30896",
                     "EffectiveStart": "2014-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -663,7 +663,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2014-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "3089656785",
+                    "ManagerXRefCode": "40896",
                     "ManagerFirstName": "Michael",
                     "ManagerMiddleName": "Robert",
                     "ManagerLastName": "Richard",
@@ -729,7 +729,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "308965",
+        "XRefCode": "30896",
         "CommonName": "Thomas",
         "DisplayName": "Thomas Holman",
         "FirstName": "Thomas",
@@ -770,11 +770,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "fworker",
-        "EmployeeNumber": "308965678",
+        "EmployeeNumber": "50898",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "308965678",
+                    "EmployeeNumber": "50898",
                     "EffectiveStart": "2014-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -1031,7 +1031,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2015-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "30896567678",
+                    "ManagerXRefCode": "67678",
                     "ManagerFirstName": "Joseph",
                     "ManagerMiddleName": "Matthew",
                     "ManagerLastName": "Anthony",
@@ -1069,7 +1069,7 @@ dayforce:Employee[] employees = [
         "HomeOrganization": {
             "ContactCellPhone": "5558675309",
             "BusinessPhone": "6758675309",
-            "ContactEmail": "christopher@gmail.com",
+            "ContactEmail": "bobby@gmail.com",
             "ClockTransferCode": "654",
             "XRefCode": "Store2 320264",
             "ShortName": "Store2 3204 - Produce"
@@ -1092,11 +1092,11 @@ dayforce:Employee[] employees = [
                     "ContactInformationType": {
                         "XRefCode": "BusinessEmail"
                     },
-                    "ContactNumber": "christopher@gmail.com"
+                    "ContactNumber": "bobby@gmail.com"
                 }
             ]
         },
-        "XRefCode": "308965678",
+        "XRefCode": "50898",
         "CommonName": "Bobby",
         "DisplayName": "Bobby Liam",
         "FirstName": "Bobby",
@@ -1136,11 +1136,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "hworker",
-        "EmployeeNumber": "308",
+        "EmployeeNumber": "30815",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "308",
+                    "EmployeeNumber": "30815",
                     "EffectiveStart": "2014-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -1397,7 +1397,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2015-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "30896567678",
+                    "ManagerXRefCode": "67678",
                     "ManagerFirstName": "Joseph",
                     "ManagerMiddleName": "Matthew",
                     "ManagerLastName": "Anthony",
@@ -1462,7 +1462,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "308",
+        "XRefCode": "30815",
         "CommonName": "Christopher",
         "DisplayName": "Christopher Charles",
         "FirstName": "Christopher",
@@ -1503,11 +1503,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "hworker",
-        "EmployeeNumber": "3083",
+        "EmployeeNumber": "30831",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "3083",
+                    "EmployeeNumber": "30831",
                     "EffectiveStart": "2014-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -1764,7 +1764,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2015-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "308678",
+                    "ManagerXRefCode": "30867",
                     "ManagerFirstName": "Steven",
                     "ManagerMiddleName": "Andrew",
                     "ManagerLastName": "Anthony",
@@ -1829,7 +1829,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "3083",
+        "XRefCode": "30831",
         "CommonName": "Joshua",
         "DisplayName": "Joshua Kenneth",
         "FirstName": "Joshua",
@@ -2131,7 +2131,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2013-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "7890",
+                    "ManagerXRefCode": "78905",
                     "ManagerFirstName": "Jason",
                     "ManagerMiddleName": "Edward",
                     "ManagerLastName": "Jeffrey",
@@ -2236,11 +2236,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "kworker",
-        "EmployeeNumber": "447890",
+        "EmployeeNumber": "44789",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "447890",
+                    "EmployeeNumber": "44789",
                     "EffectiveStart": "2005-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -2497,7 +2497,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2013-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "7890",
+                    "ManagerXRefCode": "78905",
                     "ManagerFirstName": "Jason",
                     "ManagerMiddleName": "Edward",
                     "ManagerLastName": "Jeffrey",
@@ -2561,7 +2561,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "67890",
+        "XRefCode": "44789",
         "CommonName": "Tanya",
         "DisplayName": "Tanya Granger",
         "FirstName": "Tanya",
@@ -2601,11 +2601,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "kworker",
-        "EmployeeNumber": "6789023",
+        "EmployeeNumber": "67590",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "6789023",
+                    "EmployeeNumber": "67590",
                     "EffectiveStart": "2005-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -2927,7 +2927,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "5678421",
+        "XRefCode": "67590",
         "CommonName": "Jonathan",
         "DisplayName": "Jonathan Larry",
         "FirstName": "Jonathan",
@@ -3229,9 +3229,9 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2013-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "3089656785",
+                    "ManagerXRefCode": "40896",
                     "ManagerFirstName": "Michael",
-                    "ManagerMiddleName": "Richard",
+                    "ManagerMiddleName": "Robert",
                     "ManagerLastName": "Richard",
                     "ManagerBadgeNumber": "123455678"
                 }
@@ -3294,7 +3294,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "34523",
+        "XRefCode": "76543",
         "CommonName": "Nathan",
         "DisplayName": "Nathan Henry",
         "FirstName": "Nathan",
@@ -3335,11 +3335,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "kworker",
-        "EmployeeNumber": "916870",
+        "EmployeeNumber": "91687",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "916870",
+                    "EmployeeNumber": "91687",
                     "EffectiveStart": "2005-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -3596,7 +3596,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2013-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "764543",
+                    "ManagerXRefCode": "76454",
                     "ManagerFirstName": "Peter",
                     "ManagerMiddleName": "Noah",
                     "ManagerLastName": "Kyle",
@@ -3661,7 +3661,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "3452334",
+        "XRefCode": "91687",
         "CommonName": "Megan",
         "DisplayName": "Megan Jacqueline",
         "FirstName": "Megan",
@@ -3701,11 +3701,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "kworker",
-        "EmployeeNumber": "07158959",
+        "EmployeeNumber": "71589",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "07158959",
+                    "EmployeeNumber": "71589",
                     "EffectiveStart": "2005-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -3962,7 +3962,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2013-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "55989342",
+                    "ManagerXRefCode": "55989",
                     "ManagerFirstName": "Randy",
                     "ManagerMiddleName": "Mason",
                     "ManagerLastName": "Vincent",
@@ -4027,7 +4027,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "3452334",
+        "XRefCode": "71589",
         "CommonName": "Roy",
         "DisplayName": "Roy Bobby",
         "FirstName": "Roy",
@@ -4068,11 +4068,11 @@ dayforce:Employee[] employees = [
             "LastModifiedTimestamp": "2017-06-20T15:33:57.203"
         },
         "LoginId": "kworker",
-        "EmployeeNumber": "389348920834",
+        "EmployeeNumber": "38934",
         "EmploymentStatuses": {
             "Items": [
                 {
-                    "EmployeeNumber": "389348920834",
+                    "EmployeeNumber": "38934",
                     "EffectiveStart": "2005-02-04T00:00:00",
                     "EmploymentStatus": {
                         "IsBenefitArrearsEnabled": false,
@@ -4329,7 +4329,7 @@ dayforce:Employee[] employees = [
                 {
                     "EffectiveStart": "2013-01-05T00:00:00",
                     "EffectiveEnd": "2020-01-05T00:00:00",
-                    "ManagerXRefCode": "88989342",
+                    "ManagerXRefCode": "88989",
                     "ManagerFirstName": "Eric",
                     "ManagerLastName": "Jason",
                     "ManagerBadgeNumber": "345675756767"
@@ -4390,7 +4390,7 @@ dayforce:Employee[] employees = [
                 }
             ]
         },
-        "XRefCode": "3452334",
+        "XRefCode": "38934",
         "CommonName": "Bradley",
         "DisplayName": "Bradley Russell",
         "FirstName": "Bradley",
