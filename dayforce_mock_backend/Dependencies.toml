@@ -22,7 +22,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "cache"
-version = "3.7.1"
+version = "3.8.0"
 dependencies = [
 	{org = "ballerina", name = "constraint"},
 	{org = "ballerina", name = "jballerina.java"},
@@ -33,7 +33,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "constraint"
-version = "1.4.0"
+version = "1.5.0"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"}
 ]
@@ -41,7 +41,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "crypto"
-version = "2.5.0"
+version = "2.6.2"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "time"}
@@ -97,9 +97,6 @@ version = "1.6.0"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.value"}
-]
-modules = [
-	{org = "ballerina", packageName = "io", moduleName = "io"}
 ]
 
 [[package]]
@@ -284,7 +281,7 @@ modules = [
 ]
 
 [[package]]
-org = "bhashinee"
+org = "ballerinax"
 name = "dayforce"
 version = "0.1.0"
 dependencies = [
@@ -292,8 +289,8 @@ dependencies = [
 	{org = "ballerina", name = "url"}
 ]
 modules = [
-	{org = "bhashinee", packageName = "dayforce", moduleName = "dayforce"},
-	{org = "bhashinee", packageName = "dayforce", moduleName = "dayforce.oas"}
+	{org = "ballerinax", packageName = "dayforce", moduleName = "dayforce"},
+	{org = "ballerinax", packageName = "dayforce", moduleName = "dayforce.oas"}
 ]
 
 [[package]]
@@ -302,9 +299,8 @@ name = "dayforce_mock_backend"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "io"},
 	{org = "ballerinai", name = "observe"},
-	{org = "bhashinee", name = "dayforce"}
+	{org = "ballerinax", name = "dayforce"}
 ]
 modules = [
 	{org = "maryam", packageName = "dayforce_mock_backend", moduleName = "dayforce_mock_backend"}

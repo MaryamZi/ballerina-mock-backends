@@ -1,7 +1,5 @@
 import ballerina/http;
-
-import bhashinee/dayforce;
-import ballerina/io;
+import ballerinax/dayforce;
 
 configurable string serviceUrl = ?;
 
@@ -14,8 +12,8 @@ service /Api on new http:Listener(8080) {
     final readonly & dayforce:Employee[] employees;
     final int employeeCount;
 
-    function init() returns error? {
-        self.employees = check loadEmployees();
+    function init() {
+        self.employees = employees;
         self.employeeCount = self.employees.length();
     }
 
@@ -116,11 +114,4 @@ service /Api on new http:Listener(8080) {
             };
         }
     }
-}
-
-function loadEmployees() returns readonly & dayforce:Employee[]|error {
-    // Workaround for Choreo limitation.
-    string[] filePaths = from int i in 1 ... 12 select string `/data${i}.json`;
-    json[] data = from string filePath in filePaths select check io:fileReadJson(filePath);
-    return data.fromJsonWithType();
 }
